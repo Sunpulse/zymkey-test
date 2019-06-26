@@ -1,0 +1,12 @@
+[Unit]
+Description=zymkey test daemon
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/home/pi/zymkey-test/start.sh
+Restart=always
+RestartSec=1
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
