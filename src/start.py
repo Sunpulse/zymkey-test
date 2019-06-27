@@ -21,7 +21,7 @@ def main():
     start_time = time()
     public_key = get_public_key()
 
-    print("Got public key")
+    print("Got public key", public_key)
 
     end_time = time()
     print("done " + str(timedelta(seconds=end_time - start_time)))
