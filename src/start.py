@@ -14,7 +14,7 @@ def get_public_key():
     pub_key = zymkey.client.get_ecdsa_public_key()
     return binascii.hexlify(pub_key)
 
-INTERVAL = 60
+INTERVAL = 5
 
 def main():
     print("start")

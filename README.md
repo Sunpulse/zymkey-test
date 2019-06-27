@@ -13,7 +13,7 @@ Install Python dependencies
 # install python dependencies
 virtualenv -p $(which python2) ./venv
 
-./venv/bin/pip install -r requirements.txt
+./venv/bin/./venv/bin/pip install -r requirements.txt
 
 # setup systemd
 sudo cp systemd/zymkey-test.service /etc/systemd/system/zymkey-test.service
