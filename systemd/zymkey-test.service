@@ -7,6 +7,7 @@ ExecStart=/home/pi/zymkey-test/start.sh
 Restart=always
 RestartSec=1
 Type=simple
+User=pi
 
 [Install]
 WantedBy=multi-user.target
