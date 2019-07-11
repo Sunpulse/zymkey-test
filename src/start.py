@@ -14,16 +14,15 @@ def get_public_key():
     pub_key = zymkey.client.get_ecdsa_public_key()
     return binascii.hexlify(pub_key)
 
-INTERVAL = 5
+INTERVAL = 1
 
 def main():
     print("start")
     start_time = time()
     # Test getting public key
-    # public_key = get_public_key()
+    public_key = get_public_key()
 
-    # print("Got public key", public_key)
-    # print("Got public key")
+    print("Got public key", public_key)
 
     # Test signing
     message = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
