@@ -20,9 +20,9 @@ def main():
     print("start")
     start_time = time()
     # Test getting public key
-    public_key = get_public_key()
-
-    print("Got public key", public_key)
+    # public_key = get_public_key()
+    #
+    # print("Got public key", public_key)
 
     # Test signing
     message = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
