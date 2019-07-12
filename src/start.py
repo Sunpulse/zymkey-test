@@ -20,9 +20,9 @@ def main():
     print("start")
     start_time = time()
     # Test getting public key
-    # public_key = get_public_key()
-    #
-    # print("Got public key", public_key)
+    public_key = get_public_key()
+
+    print("Got public key", public_key)
 
     # Test signing
     message = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -36,10 +36,8 @@ def main():
 if __name__ == "__main__":
     i = 0
     while True:
-        try:
-            main()
-            i += 1
-        except Exception as e:
-            print("main error", e)
+        main()
+        i += 1
         print("i", i)
+
         sleep(INTERVAL - (time() % INTERVAL))
