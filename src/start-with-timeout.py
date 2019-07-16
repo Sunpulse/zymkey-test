@@ -49,7 +49,7 @@ if __name__ == "__main__":
     i = 0
     while True:
         i += 1
-        run_with_timeout(func, 10)
+        run_with_timeout(main, 10)
         print("i", i)
 
         sleep(INTERVAL - (time() % INTERVAL))
