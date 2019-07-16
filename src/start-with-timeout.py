@@ -39,7 +39,7 @@ def timeout_handler():
 
 def run_with_timeout(func, secs):
     signal.signal(signal.SIGALRM, timeout_handler)
-    signal.alarm(10)
+    signal.alarm(secs)
 
     func()
 
