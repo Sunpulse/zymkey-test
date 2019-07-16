@@ -1,0 +1,13 @@
+[Unit]
+Description=zymkey test daemon
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/home/pi/zymkey-test/start-with-timeout.sh
+Restart=always
+RestartSec=1
+Type=simple
+User=pi
+
+[Install]
+WantedBy=multi-user.target
