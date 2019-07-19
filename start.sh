@@ -6,4 +6,6 @@ cd "$(dirname ${BASH_SOURCE[0]})"
 
 VENV_HOME=./venv
 
+sleep 5
+
 $VENV_HOME/bin/python -u src/start.py
