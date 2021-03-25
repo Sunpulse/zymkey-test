@@ -1,4 +1,4 @@
 cmdline==0.2.0
-PyYAML==5.1.1
+PyYAML==5.4
 sh==1.12.14
 zymkey==0.1.3
